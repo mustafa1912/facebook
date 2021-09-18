@@ -1,0 +1,280 @@
+:root {
+    --mainColor: #4294FF;
+}
+
+body {
+    background: linear-gradient(120deg, #fff, #fff 55%, var(--mainColor) 45%, var(--mainColor))
+}
+
+.header button {
+    color: var(--mainColor);
+    background-color: #fff;
+}
+
+.header button:hover i {
+    position: relative;
+    top: 5px;
+}
+
+
+/* start dark-mode*/
+
+.dark-mode {
+    position: absolute;
+    right: 35px;
+    top: -40px;
+    animation-name: dark-mode;
+    animation-duration: 4s;
+    transition: 0.8s;
+}
+
+@keyframes dark-mode {
+    0% {
+        top: -40px;
+    }
+    25% {
+        top: -10px;
+    }
+    50% {
+        top: -60px;
+    }
+    100% {
+        top: -40px;
+    }
+}
+
+.dark-mode-line {
+    margin: auto;
+    width: 2px;
+    height: 80px;
+    border: solid 2px;
+}
+
+.dark-mode-circle {
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    border: solid 2px;
+}
+
+.dark {
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    background: linear-gradient(120deg, #000, #000 55%, var(--mainColor) 45%, var(--mainColor));
+    color: #fff;
+}
+
+
+/* end derk-mode*/
+
+@keyframes form {
+    0% {
+        top: 50px
+    }
+    100% {
+        top: 0px
+    }
+}
+
+
+/* section login*/
+
+.login {
+    display: block;
+    position: relative;
+    animation-name: form;
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.15, 1.29)
+}
+
+.login .alert span {
+    font-size: 15px;
+}
+
+@keyframes invalid {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.invalid-input {
+    border: solid 1px #DC3545;
+}
+
+.valid-input {
+    border: solid 1px #28A745;
+}
+
+.invalid {
+    color: #DC3545;
+    font-size: 14px;
+    display: none;
+    opacity: 1;
+    animation-name: invalid;
+    animation-duration: 1s;
+}
+
+.valid {
+    color: #28A745;
+    font-size: 14px;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* section signon*/
+
+.sign-in {
+    display: none;
+    animation-name: form;
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.15, 1.29)
+}
+
+
+/* section support*/
+
+.mobile-dark {
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    background-color: black;
+    color: #fff;
+}
+
+.mobile {
+    position: relative;
+    border: #343434 10px solid;
+    border-radius: 10px;
+    height: 500px;
+    width: 300px;
+}
+
+.mobile::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 60px;
+    left: -13px;
+    top: 80px;
+    background-color: #343434;
+    border-radius: 3px;
+}
+
+.mobile::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 40px;
+    right: -13px;
+    top: 80px;
+    background-color: #343434;
+    border-radius: 3px;
+}
+
+.mobile .sound {
+    position: absolute;
+    width: 95px;
+    top: -5px;
+    left: 100px;
+    border: #343434 10px solid;
+    border-radius: 5px;
+}
+
+.mobile span {
+    font-size: 12px;
+}
+
+.mobile .icons-mobile {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.header .mt {
+    margin-top: -15px;
+}
+
+.header p {
+    color: #4294FF;
+    font-size: 30px;
+    margin: auto;
+}
+
+.header .icons-face i {
+    background-color: #e0e0e0;
+}
+
+
+/**/
+
+.mobile .icons-pages {
+    width: 280px;
+    margin: auto;
+    color: #5F6670;
+    border-bottom: solid 1px #d8d7d7;
+}
+
+.mobile .icons-pages i {
+    padding-bottom: 12px;
+    transition: 0.5s;
+}
+
+.mobile .icons-pages i:hover {
+    color: #4294FF;
+    border-bottom: solid 1px #4294FF;
+}
+
+.mobile .icons-pages .fa-home {
+    color: #4294FF;
+    border-bottom: solid 1px #4294FF;
+}
+
+.storys {
+    width: 280px;
+    margin: auto;
+}
+
+.story {
+    position: relative;
+    width: 100px;
+    height: 120px;
+    margin: 0px 3px;
+    background-size: cover;
+}
+
+.storys .zz {
+    width: 86px;
+    height: 40px;
+    background-color: #5F6670;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.storys img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.storys p {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #fff;
+    font-size: 10px;
+    margin: auto;
+}
+
+
+/**/
+
+.post p {
+    font-size: 14px;
+    margin-top: -10px;
+    color: #5F6670;
+}
